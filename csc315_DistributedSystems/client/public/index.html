@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+    <title>Document</title>
+    <!-- Import socket-io client -->
+    <script src="/socket.io-client/socket.io.js"></script>
+</head>
+
+<body>
+    <!-- Heading -->
+    <h2>Simple client</h2>
+
+    <!-- Input form -->
+    <form id="msgForm">
+        <label for="ackmessage">Change response message:</label>
+        <input type="text" id="ackmessage" name="ackmessage">
+    </form>
+
+    <!-- The acknowledgement message to be sent to server -->
+    <p>
+        Acknowledgement message at server: <strong id="msg">'This is a response message' </strong>
+    </p>
+
+    <!-- Send Form -->
+    <form id="sendForm">
+        <label for="sendMessage">Send message:</label>
+        <input type="text" id="sendMessage" name="sendMessage">
+    </form>
+
+    <ul id="messageList"></ul>
+
+    <br>
+
+    <!-- Tell server to stop sending questions -->
+    <div>
+        <input id="btn" name="btn" type="button" value="Stop listening" /> &nbsp;&nbsp;
+        <input id="btnStart" name="btnStart" type="button" value="Start listening" /> &nbsp;&nbsp;
+        <input id="btnClear" name="btnClear" type="button" value="Clear responses" />
+
+        <br>
+        <p id="listenStatus"> Listening </p>
+    </div>
+
+    <!-- Messages from server are going to come here -->
+    <div id="messages"></div>
+
+    <!-- Bring in our main module -->
+    <script type="module" src="/js/main.js"></script>
+</body>
+
+</html>
