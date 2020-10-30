@@ -17,6 +17,7 @@ class Node:
         self.name = name
         self.state = "susceptible"
         self.nodeList = None
+        self.k = 5
 
     # Create the list of new nodes
     # ... every node knows every other node
@@ -32,12 +33,14 @@ class Node:
 
             if self.state == "infected":
 
-                q = random.choice(list(self.nodeList.items()))
-                q = q[1]
-                q.updateValue("d1", value)
+                # q is the active node
+                node = random.choice(list(self.nodeList.items()))
+                node = node[1]
+                node.updateValue("d1", value)
 
-                # Probability 0.3
-                coinToss = random.choice([True, True, False])
+                # Probality 1/5
+                # Probability 0.20.
+                coinToss = random.choice([False, False, False, False, True, ])
 
                 if coinToss:
                     self.state = "removed"
@@ -49,11 +52,50 @@ class Node:
                 self.looping = False
                 return
 
-    def feddbackBasedUpdate(self, keyname, value):
-        pass
+    def feedbackBasedUpdate(self, keyname, value):
+        ts = time.time()
+        looping = True
 
-    def fixedProbability(self, keyname, value):
-        pass
+        while looping:
+            self.timeout(0.5)
+
+            if self.state == "infected":
+
+                node = random.choice(list(self.nodeList.items()))
+                node = node[1]  # get the node
+                nodeState = node.state  # Get the node state
+                node.updateValue("d1", value)
+
+                # Probality 1/5
+                # Probability 0.20.
+                coinToss = random.choice([False, False, False, False, True, ])
+
+                # If site was already infected
+                if nodeState == "infected" and coinToss:
+                    self.state = "removed"
+                    self.looping = False
+                    print("Node: " + self.name +
+                          " lost interest and is removed")
+                    return
+            else:
+                print("Node not infected stopping")
+                self.looping = False
+                return
+
+    def fixedProbabilityUpdate(self, keyname, value):
+        k = len(list(self.nodeList.keys()))
+        ts = time.time()
+
+        if self.state == "infected":
+
+            # Go through all nodes and infect
+            for node in list(self.nodeList.items()):
+                self.timeout(0.5)
+                node = node[1]
+                node.updateValue("d1", value)
+                if node.state == "infected":
+                    print("Node " + node.name +
+                          " is infected. Proceeding ...")
 
     def timeout(self, duration):
         time.sleep(duration)
@@ -79,6 +121,3 @@ class Node:
             return
         else:
             return
-
-    def push(self):
-        pass
