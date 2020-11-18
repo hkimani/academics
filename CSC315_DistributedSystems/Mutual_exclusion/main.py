@@ -5,6 +5,7 @@ no_of_process = 8
 processes = []
 head = None
 
+# Create the processes
 for i in range(no_of_process):
     # Get a random sleep time before checking whether i have the token
     sleep_time = round(random.uniform(0, 3), 2)
@@ -13,6 +14,7 @@ for i in range(no_of_process):
 
     processes.append(p)
 
+# Assign neighbours to the processes
 for idx, process in enumerate(processes):
 
     if idx == 0:
