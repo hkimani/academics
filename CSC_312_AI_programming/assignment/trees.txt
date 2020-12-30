@@ -1,0 +1,234 @@
+Name - Banyan Tree
+Type - Deciduous, Evergreen, Coniferous
+family - fig tree
+Scientific Name - Ficus benghalensis
+features - tall, large, enormous, canopy, wide
+fruit - syconium
+climate - tropical, subtropical
+nickname - strangler fig
+roots - aerial prop
+leaves - enormous, thick, leather-like
+
+---------------------------------------------- 1
+
+Name - Black Ash Tree 
+Type - Decidous
+family - 
+Scientific Name - Fraxinus nigra
+features - tall, medium, corky-texture
+fruit - samara
+climate - 
+nickname - 
+roots - 
+leaves - pinnate, dark brown, velvet
+
+---------------------------------------------- 2
+
+Name - White Ash Tree
+Type - Decidous
+family - 
+Scientific Name - Fraxinus americana
+features - oval shape
+fruit - 
+climate - mesophytic hardwood forests
+nickname - white ash tree
+roots - 
+leaves - glaucous underside, grey/blue, metallic, vibrant red and yellow, compound leaves
+
+---------------------------------------------- 3
+
+Name - Neem Tree
+Type - Decidous, Evergreen
+family - mahogany, meliaceae
+Scientific Name - Azadirachta indica
+features - spreading, drought resistant, fast growing
+fruit - 
+climate - tropical, semi tropical
+nickname - nimtree, indian Lilac
+roots - 
+leaves - 
+
+---------------------------------------------- 4
+
+Name - Bigtooth Aspen Tree
+Type - Decidous
+family - 
+Scientific Name - Populus grandidentata
+features - thin, disorienting tree, thick
+fruit - 
+climate - 
+nickname - large-tooth aspen, American aspen, or Canadian poplar
+roots - 
+leaves - strange, thick
+
+---------------------------------------------- 5
+
+Name - Quaking Aspen Tree
+Type - Decidous
+family - 
+Scientific Name - Populus tremula
+features - tolerant to cold winters and short summers,  tall, thick trunk, light greenish-grey bark, rough bark, clatter and tremble at the slightest breeze, soft wood
+fruit - 
+climate -  coolest, most temperate
+nickname - langues des femmes, the tongues of women
+roots - 
+leaves - small, round, toothed edges
+
+---------------------------------------------- 6
+
+Name - Mahogany Tree
+Type - semi-deciduous, semi-evergreen
+family - 
+Scientific Name - Swietenia mahagoni
+features - medium sized tree
+fruit - 
+climate -  tropical 
+nickname - swietenia mahagoni
+roots - 
+leaves - small-leaved mahogany, reddish-pink color
+
+---------------------------------------------- 7
+
+Name -  The Basswood Tree
+Type - Decidous
+family - malvaceae
+Scientific Name - Tilia americana
+features - tall, pale in color, free of knots
+fruit - 
+climate - 
+nickname - 
+roots - 
+leaves - quite large, simply shaped, alternating ovate, cordate shaping, oval, heart with wide bases
+
+---------------------------------------------- 8
+Name -  The American Beech Tree
+Type - Decidous
+family - 
+Scientific Name - Fagus grandifolia
+features - tall, ornamental,
+fruit - 
+climate - 
+nickname - 
+roots - 
+leaves - 
+
+---------------------------------------------- 9
+
+Name - Eucalyptus Tree
+Type - Coniferous
+family - 
+Scientific Name - Eucalyptus
+features - smooth, hard, stringy or fibrous bark
+fruit - gumnut
+climate - hot
+nickname - 
+roots - 
+leaves - oil glands, petals, sepals
+
+---------------------------------------------- 10
+
+Name -  The Balsam Fir Tree
+Type - Coniferous, Evergreen
+family - 
+Scientific Name - Abies balsamea
+features - medium size, wood of this tree is soft, coarse grained, light, not durable, and light brown in color, bark of this tree is gray and brown in color
+fruit - 
+climate - cold and deep swamps
+nickname - 
+roots - 
+leaves - twister and resemble needles, dark brown in color, strong scent
+
+---------------------------------------------- 11
+
+Name - Eastern Hemlock Tree
+Type - Coniferous
+family - 
+Scientific Name - Tsuga Canadensis
+features - large, long lived, shade loving, gray bark
+fruit - 
+climate - 
+nickname - 
+roots - 
+leaves - borne singly, dark green
+
+---------------------------------------------- 12
+
+Name - Pitch Pine Tree
+Type - Coniferous
+family - 
+Scientific Name - Pinus rigida
+features - small to medium sized, wood of this tree is coarse grained, hard, and reddish brown in color
+fruit - 
+climate - 
+nickname - 
+roots - 
+leaves - like needles, very stiff, and they are green yellow in color
+
+---------------------------------------------- 13
+
+Name - Red Pine Tree
+Type - Coniferous
+family - 
+Scientific Name - Pinus resinosa
+features - medium to large sized, rapid growing, bark is brown red in color, thin ridges
+fruit - 
+climate - temperate
+nickname - 
+roots - 
+leaves - needle like, rich, deep green color
+
+---------------------------------------------- 14
+
+Name - The Scots Pine Tree
+Type - Coniferous
+family - 
+Scientific Name - Pinus sylvestris
+features - medium to large sized, coarse-grained, thick, and brown in color, scaly bark
+fruit - 
+climate - 
+nickname - 
+roots - 
+leaves - needle like, blue green
+
+---------------------------------------------- 15
+
+Name - Eastern Red Cedar Tree
+Type - Coniferous
+family - 
+Scientific Name - Juniperus virginiana
+features - small sized, slow growing, fragrant, soft, brittle, light, very durable
+fruit - 
+climate - 
+nickname - 
+roots - 
+leaves - pointy
+
+---------------------------------------------- 16
+
+Name - Red Spruce Tree
+Type - Coniferous
+family - 
+Scientific Name - Picea rubens
+features - small to medium sized, shade tolerant, slow growing, perennial,
+fruit - 
+climate - 
+nickname - 
+roots - 
+leaves - needle like, yellow, green
+
+---------------------------------------------- 17
+
+Name - White Spruce Tree
+Type - Coniferous
+family - 
+Scientific Name - Picea glauca
+features - large sized, tall, ornamental
+fruit - 
+climate - 
+nickname - 
+roots - 
+leaves - needle like, shiny, green, srong smell
+
+---------------------------------------------- 18
+
+
