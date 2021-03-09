@@ -6,12 +6,17 @@ def execute(algorithm, test_inputs, inputs, labels):
 
     # Train the perceptron
     algorithm.train(inputs, labels)
-    accuracy = 0
+    total_correct = 0
+    total = len(inputs)
 
-    for i in test_inputs:
+    for idx, input_array in enumerate(test_inputs):
         # Test the perceptron
-        # print(algorithm.predict(i))
-        output = algorithm.predict(i)
+        output = 1 if algorithm.predict(input_array) == 0 else 2
+        if(output == labels[idx]):
+            total_correct += 1
+
+    accuracy = total_correct/total * 100
+    return f'accuracy is {accuracy}%'
 
 
 def import_data(path_to_file):
@@ -62,7 +67,8 @@ print('\nPerceptron algorithm\n')
 
 perceptron = lib.Perceptron(13)
 perceptron.var_checks()
-execute(perceptron, test_inputs, training_inputs, labels)
+accuracy = execute(perceptron, test_inputs, training_inputs, labels)
+print(accuracy)
 
 
 # Diabetes data
@@ -74,4 +80,5 @@ print('\nAdaline algorithm\n')
 # Adaline algorithm
 adaline = lib.Adaline(8, 100)
 adaline.var_checks()
-execute(adaline, test_inputs, training_inputs, labels)
+accuracy = execute(adaline, test_inputs, training_inputs, labels)
+print(accuracy)
