@@ -9,7 +9,8 @@ def execute(algorithm, test_inputs, inputs, labels):
 
     for i in test_inputs:
         # Test the perceptron
-        print(algorithm.predict(i))
+        # print(algorithm.predict(i))
+        algorithm.predict(i)
 
 
 def import_heart_data():
@@ -19,6 +20,7 @@ def import_heart_data():
     input_list = []
     training_inputs = []
     labels = []
+    training_inputs_final = []
 
     # Strips the newline character
     for idx, line in enumerate(lines):
@@ -41,20 +43,21 @@ def import_heart_data():
         # Last item of the array
         labels.append(lst[-1])
 
-    return training_inputs, labels
+    # Create compatible numpy array
+    for idx, ipt in enumerate(training_inputs):
+        training_inputs_final.append(np.array(ipt))
+
+    # Labels
+    new_labels = np.array(labels)
+
+    return training_inputs_final, new_labels
 
 
-# Raw
 training_inputs, labels = import_heart_data()
+test_inputs = training_inputs
 
-# Training inputs
-inputs = []
+print('\nPerceptron algorithm\n')
 
-# Adding training inputs
-inputs.append(np.array([1, 1]))
-inputs.append(np.array([1, 0]))
-inputs.append(np.array([0, 1]))
-inputs.append(np.array([0, 0]))
-
-# Labels
-labels = np.array([1, 0, 0, 0])
+perceptron = lib.Perceptron(13)
+perceptron.var_checks()
+execute(perceptron, test_inputs, training_inputs, labels)

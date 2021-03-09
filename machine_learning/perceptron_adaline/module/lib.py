@@ -1,8 +1,6 @@
 # Library for support of large multidimensional arrays and matrices
 import numpy as np
 
-c = 0
-
 
 class Perceptron:
     # Inheriting from The base class of the class hierarchy.
