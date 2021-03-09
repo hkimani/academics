@@ -6,15 +6,16 @@ def execute(algorithm, test_inputs, inputs, labels):
 
     # Train the perceptron
     algorithm.train(inputs, labels)
+    accuracy = 0
 
     for i in test_inputs:
         # Test the perceptron
         # print(algorithm.predict(i))
-        algorithm.predict(i)
+        output = algorithm.predict(i)
 
 
-def import_heart_data():
-    file = open('data/heart.data.txt', 'r')
+def import_data(path_to_file):
+    file = open(path_to_file, 'r')
     lines = file.readlines()
 
     input_list = []
@@ -53,7 +54,8 @@ def import_heart_data():
     return training_inputs_final, new_labels
 
 
-training_inputs, labels = import_heart_data()
+# Heart data
+training_inputs, labels = import_data('data/heart.data.txt')
 test_inputs = training_inputs
 
 print('\nPerceptron algorithm\n')
@@ -61,3 +63,15 @@ print('\nPerceptron algorithm\n')
 perceptron = lib.Perceptron(13)
 perceptron.var_checks()
 execute(perceptron, test_inputs, training_inputs, labels)
+
+
+# Diabetes data
+training_inputs, labels = import_data('data/pimadiabetes.data.txt')
+test_inputs = training_inputs
+
+print('\nAdaline algorithm\n')
+
+# Adaline algorithm
+adaline = lib.Adaline(8, 100)
+adaline.var_checks()
+execute(adaline, test_inputs, training_inputs, labels)

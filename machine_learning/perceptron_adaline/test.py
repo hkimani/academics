@@ -37,4 +37,4 @@ print('\nAdaline algorithm\n')
 # Adaline algorithm
 adaline = lib.Adaline(2, 1000)
 adaline.var_checks()
-test(adaline, [np.array([1, 1]), np.array([1, 0]), ])
+test(adaline, [np.array([1, 1]), np.array([1, 0])])
